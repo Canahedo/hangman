@@ -9,7 +9,7 @@ from words import wordList # Source of potential words
 from random import choice # Chooses the word
 from gal import low as gallow # Provides gallows images
 
-# Takes input, rejects if not alphabetical or >1 char, ir if it has already been used, returns lowercase
+# Takes input, rejects if not alphabetical or >1 char, or if it has already been used, returns lowercase
 def guess(used):
     guess = "" # Initialize
     while not guess.isalpha(): # Loops if input is not alphabetical
@@ -39,7 +39,7 @@ word = choice(wordList) # Randomly choose word from list
 board, wrong = "", "" # Initialize main board and incorrect guess board
 for letter in range(len(word)): board += "_" # Add a space to board for each letter in word
 
-#print(f"DEBUG:: Word: {word}") # Uncomment to see answer when program starts
+print(f"DEBUG:: Word: {word}") # Uncomment to see answer when program starts
 
 step = 0
 while step < 6:
