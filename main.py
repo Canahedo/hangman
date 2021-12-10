@@ -19,7 +19,7 @@ def guess(used):
 
 # Draws gameboard with gallows at nth step, and displays guessed letters
 def draw(n,wrong,board,word):
-    print(f"------------------\n------------------\nWelcome to Hangman\nFind the hidden word\n{len(word)} letters long\nGuess a letter\n------------------")
+    print(f"\n------------------\n------------------\nWelcome to Hangman\nFind the hidden word\n{len(word)} letters long\nGuess a letter\n------------------")
     print(gallow[n])
     print(f"Incorrect guesses: {wrong}")
     print(f"Word: {board}")
