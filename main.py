@@ -39,7 +39,7 @@ word = choice(wordList) # Randomly choose word from list
 board, wrong = "", "" # Initialize main board and incorrect guess board
 for letter in range(len(word)): board += "_" # Add a space to board for each letter in word
 
-print(f"DEBUG:: Word: {word}") # Uncomment to see answer when program starts
+#print(f"DEBUG:: Word: {word}") # Uncomment to see answer when program starts
 
 step = 0
 while step < 6:
